@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Programação Web 1</title>
+    </head>
+    <body>
+        <form method="post">
+            <h1>Formulário de Pagamento</h1>
+            <section>
+                <h2>Informação do Contato</h2>
+                <fieldset>
+                    <legend>Titulo</legend>
+                    <ul>
+                        <li>
+                            <label for="title_1">
+                                <input type="radio" id="title_1" name="titulo">
+                                King
+                            </label>
+                        </li>
+                        <li>
+                            <label for="title_2">
+                                <input type="radio" id="title_2" name="titulo">
+                                Queen
+                            </label>
+                        </li>
+                        <li>
+                            <label for="title_3">
+                                <input type="radio" id="title_3" name="titulo">
+                                Other
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <p>
+                    <label for="name">
+                        <span>Nome:</span>
+                    </label>
+                    <input type="text" id="name" nome="username"/>
+                </p>
+                <p>
+                    <label for="mail">
+                        <span>E-mail:</span>
+                    </label>
+                    <input type="text" id="mail" nome="email"/>
+                </p>
+                <p>
+                    <label for="password">
+                        <span>Senha:</span>
+                    </label>
+                    <input type="password" id="password" nome="password"/>
+                </p>
+            </section>
+            <section>
+                <h2>Informação do Pagamento</h2>
+                <p>
+                    <label for="card">
+                        Tipo do Cartão:
+                    </label>
+                    <select id="card" name="cardtype">
+                        <option value="visa">Visa</option>
+                        <option value="master">Master</option>
+                        <option value="american">American Express</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="date">
+                        Data do Cartão:
+                    </label>
+                    <input type="date" id="date" name="expiration" disabled> 
+                </p>
+            </section>
+            <section>
+                <p>
+                    <button type="submit">Enviar</button>
+                </p>
+            </section>
+        </form>
+    </body>
+</html>
